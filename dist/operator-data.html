@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo-blue-dots.svg" alt="">
+            </a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="nav-icon dashboard"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon merchants"></span>
+                    Merchants
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon users"></span>
+                    Users
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon reports"></span>
+                    Reports
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon activity"></span>
+                    Activity log
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon settings"></span>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="modal" data-target="#logoutModal">
+                    <span class="nav-icon logout"></span>
+                    Log out
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="block">
+                <div class="merchant-item">
+                    <div class="merchant-wrap">
+                        <div class="thumb operator-thumb"></div>
+                        <div class="status">
+                            <img src="img/status-inactive.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item-data operator-data">
+                        <h2>Operator data</h2>
+
+                        <ul>
+                            <li><b>Operator ID:</b> 7846786570987764</li>
+                            <li><b>Login:</b> daymanager</li>
+                            <li><b>Name:</b> Alan Charles</li>
+                            <li><b>Phone:</b> Phone:</li>
+                            <li><b>Merchant ID:</b> 3184357836457867</li>
+                            <li><b>Date of creation:</b> 12:45, 22 March 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h3>Devices (0)</h3>
+                </div>
+                <p>The operator is not authorized on any device..</p>
+            </div>
+
+            <div class="block">
+                <div class="merchant-item ">
+                    <div class="merchant-wrap">
+                        <div class="thumb operator-thumb"></div>
+                        <div class="op-buttons">
+                            <button class="type-4" data-toggle="modal" data-target="#suspendOperator"><span class="icon suspend"></span></button>
+                            <button class="type-4" data-toggle="modal" data-target="#deactivateOperator"><span class="icon deactivate"></span></button>
+                        </div>
+                        <div class="status">
+                            <img src="img/status-active.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item-data operator-data">
+                        <h2>Operator data</h2>
+
+                        <ul>
+                            <li><b>Operator ID:</b> 7846786570987764</li>
+                            <li><b>Login:</b> daymanager</li>
+                            <li><b>Name:</b> Alan Charles</li>
+                            <li><b>Phone:</b> Phone:</li>
+                            <li><b>Merchant ID:</b> 3184357836457867</li>
+                            <li><b>Date of creation:</b> 12:45, 22 March 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="merchant-item ">
+                    <div class="merchant-wrap with-notice">
+                        <div class="thumb operator-thumb"></div>
+                        <div class="op-buttons">
+                            <button class="type-4" data-toggle="modal" data-target="#activateOperator"><span class="icon activate"></span></button>
+                            <button class="type-4" data-toggle="modal" data-target="#deactivateOperator"><span class="icon deactivate"></span></button>
+                        </div>
+                        <div class="status">
+                            <img src="img/status-suspended.svg" alt="">
+                        </div>
+                        <p>
+                            12:53, 22 March 2020 by Hilary Potts.
+                            Operator on vacation.
+                        </p>
+                    </div>
+                    <div class="item-data operator-data">
+                        <h2>Operator data</h2>
+
+                        <ul>
+                            <li><b>Operator ID:</b> 7846786570987764</li>
+                            <li><b>Login:</b> daymanager</li>
+                            <li><b>Name:</b> Alan Charles</li>
+                            <li><b>Phone:</b> Phone:</li>
+                            <li><b>Merchant ID:</b> 3184357836457867</li>
+                            <li><b>Date of creation:</b> 12:45, 22 March 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="merchant-item ">
+                    <div class="merchant-wrap with-notice">
+                        <div class="thumb operator-thumb"></div>
+                        <div class="op-buttons">
+                            <button class="type-4" data-toggle="modal" data-target="#suspendOperator"><span class="icon suspend"></span></button>
+                            <button class="type-4" data-toggle="modal" data-target="#deactivateOperator"><span class="icon deactivate"></span></button>
+                        </div>
+                        <div class="status">
+                            <img src="img/status-deactivated.svg" alt="">
+                        </div>
+                        <p>
+                            12:53, 22 March 2020 by Hilary Potts.
+                            Operator no longer works.
+                        </p>
+                    </div>
+                    <div class="item-data operator-data">
+                        <h2>Operator data</h2>
+
+                        <ul>
+                            <li><b>Operator ID:</b> 7846786570987764</li>
+                            <li><b>Login:</b> daymanager</li>
+                            <li><b>Name:</b> Alan Charles</li>
+                            <li><b>Phone:</b> Phone:</li>
+                            <li><b>Merchant ID:</b> 3184357836457867</li>
+                            <li><b>Date of creation:</b> 12:45, 22 March 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h3>Devices (3)</h3>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="non-slide">
+                        <div class="info devices short-status deactivated">
+                            <div class="top"></div>
+                            <div class="controls"></div>
+                            <div class="actionbar"></div>
+                            <div class="screen-info">
+                                <div class="gray">Device Model</div>
+                                <div class="white">HUAWEI FIG-LX1</div>
+                                <div class="gray">Device ID / POS ID</div>
+                                <div class="white">7628763478767677</div>
+                            </div>
+                        </div>
+                        <div class="info devices short-status suspended">
+                            <div class="top"></div>
+                            <div class="controls"></div>
+                            <div class="actionbar"></div>
+                            <div class="screen-info">
+                                <div class="gray">Device Model</div>
+                                <div class="white">Google Pixel 3a</div>
+                                <div class="gray">Device ID / POS ID</div>
+                                <div class="white">7628763478767677</div>
+                            </div>
+                        </div>
+                        <div class="info devices short-status active">
+                            <div class="top"></div>
+                            <div class="controls"></div>
+                            <div class="actionbar"></div>
+                            <div class="screen-info">
+                                <div class="gray">Device Model</div>
+                                <div class="white">Xiaomi MI 8</div>
+                                <div class="gray">Device ID / POS ID</div>
+                                <div class="white">7628763478767677</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h3>Transactions history</h3>
+                </div>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow head">
+                            <div class="divTableCell">#</div>
+                            <div class="divTableCell">Transation ID</div>
+                            <div class="divTableCell"><div class="func active">Date and time</div></div>
+                            <div class="divTableCell">Device ID / POS ID</div>
+                            <div class="divTableCell"><div class="func">Status</div></div>
+                            <div class="divTableCell">Amount</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">1</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">3</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">4</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">5</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">6</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">7</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">8</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">9</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">10</div>
+                            <div class="divTableCell">7628763478767677</div>
+                            <div class="divTableCell">14:35, 22 March 2020</div>
+                            <div class="divTableCell">7846786570987764</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">2580.50 USD</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-block">
+                    <div class="pagination-info">Showing 51 to 60 of 117 entries</div>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li>...</li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="active"><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li>...</li>
+                            <li><a href="#">12</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="modal fade" id="suspendOperator" tabindex="-1" role="dialog" aria-labelledby="suspendOperatorLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="close-modal" data-dismiss="modal">
+                    <img src="img/icons/close.svg" alt="">
+                </div>
+
+                <div class="modal-header">
+                    <h1>Suspend operator</h1>
+                    <p>You can change device status at any time.</p>
+                </div>
+                <div class="modal-body">
+                   <div class="modal-form">
+                       <div class="form-group">
+                           <select>
+                               <option value="0">Choose reason</option>
+                               <option value="1">Reason 1</option>
+                               <option value="2">Reason 2</option>
+                               <option value="3">Reason 3</option>
+                               <option value="4">Reason 4</option>
+                               <option value="6">Reason 6</option>
+                               <option value="7">Reason 7</option>
+                               <option value="8">Reason 8</option>
+                               <option value="other">Other</option>
+                           </select>
+                       </div>
+                       <div class="form-group">
+                           <input type="text" placeholder="Comment" disabled>
+                       </div>
+
+                       <div class="buttons-wrapper">
+                           <button class="type-1">confirm</button>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="deactivateOperator" tabindex="-1" role="dialog" aria-labelledby="deactivateOperatorLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="close-modal" data-dismiss="modal">
+                    <img src="img/icons/close.svg" alt="">
+                </div>
+
+                <div class="modal-header">
+                    <h1>Deactivate device</h1>
+                    <p>You won't be able to revert this!</p>
+                </div>
+                <div class="modal-body">
+                   <div class="modal-form">
+                       <div class="form-group">
+                           <select>
+                               <option value="0">Choose reason</option>
+                               <option value="1">Reason 1</option>
+                               <option value="2">Reason 2</option>
+                               <option value="3">Reason 3</option>
+                               <option value="4">Reason 4</option>
+                               <option value="6">Reason 6</option>
+                               <option value="7">Reason 7</option>
+                               <option value="8">Reason 8</option>
+                               <option value="other">Other</option>
+                           </select>
+                       </div>
+                       <div class="form-group">
+                           <input type="text" placeholder="Comment" disabled>
+                       </div>
+
+                       <div class="buttons-wrapper">
+                           <button class="type-1">confirm</button>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="activateOperator" tabindex="-1" role="dialog" aria-labelledby="activateDeviceLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="close-modal" data-dismiss="modal">
+                    <img src="img/icons/close.svg" alt="">
+                </div>
+
+                <div class="modal-header">
+                    <h1>Activate operator</h1>
+                </div>
+                <div class="modal-body">
+                   <div class="modal-form">
+                       <div class="form-group">
+                           <select>
+                               <option value="0">Choose reason</option>
+                               <option value="1">Reason 1</option>
+                               <option value="2">Reason 2</option>
+                               <option value="3">Reason 3</option>
+                               <option value="4">Reason 4</option>
+                               <option value="6">Reason 6</option>
+                               <option value="7">Reason 7</option>
+                               <option value="8">Reason 8</option>
+                               <option value="other">Other</option>
+                           </select>
+                       </div>
+                       <div class="form-group">
+                           <input type="text" placeholder="Comment" disabled>
+                       </div>
+
+                       <div class="buttons-wrapper">
+                           <button class="type-1">confirm</button>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="close-modal" data-dismiss="modal">
+                    <img src="img/icons/close.svg" alt="">
+                </div>
+
+                <div class="modal-header">
+                    <h1>Do you want to log out?</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-form">
+                        <div class="buttons-wrapper">
+                            <button class="type-1">confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
