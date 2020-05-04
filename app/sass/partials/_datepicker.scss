@@ -1,0 +1,122 @@
+.datepicker-container{
+  padding: 15px 15px 10px 15px;
+  border: 1px solid #EBEFF1;
+  .datepicker-panel{
+    ul{
+      width: 100%;
+    }
+    .month{
+
+    }
+  }
+
+  ul[data-view='week']{
+    li{
+      font-family: $fontJosefin;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #A8A8A8;
+    }
+  }
+
+  ul[data-view='days']{
+    li{
+      font-family: $fontJosefin;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: $primaryGray;
+    }
+  }
+
+  &:after, &:before{
+    display: none;
+  }
+}
+
+.datepicker-panel>ul{
+
+}
+
+.datepicker-panel>ul>li{
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //height: 16px;
+  //width: 24px;
+  margin-bottom: 10px;
+}
+
+.datepicker-panel>ul>li.picked, .datepicker-panel>ul>li.picked:hover{
+  background: transparent;
+  color: $primaryBlue;
+}
+
+.datepicker-panel>ul>li[data-view="month current"], .datepicker-panel>ul>li[data-view="year current"], .datepicker-panel>ul>li[data-view="years current"]{
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #102532;
+
+  &:hover{
+    background: transparent;
+    pointer-events: none;
+  }
+}
+
+.datepicker-panel>ul>li[data-view="month next"], .datepicker-panel>ul>li[data-view="month prev"], .datepicker-panel>ul>li[data-view="year next"], .datepicker-panel>ul>li[data-view="year prev"], .datepicker-panel>ul>li[data-view="years next"], .datepicker-panel>ul>li[data-view="years prev"], .datepicker-panel>ul>li[data-view=next]{
+  font-size: 0;
+  background: transparent;
+
+  &:hover{
+    background: transparent;
+  }
+}
+
+//.datepicker-panel > ul > li[data-view="month prev"]{
+//  position: relative;
+//}
+
+.datepicker-panel > ul > li[data-view="month prev"]:before{
+  content: '';
+  position: absolute;
+  left: 21px;
+  display: block;
+  height: 16px;
+  width: 12px;
+  background: url('../img/icons/angle-left.svg') center/cover no-repeat;
+}
+
+.datepicker-panel > ul > li[data-view="month next"]:before{
+  content: '';
+  position: absolute;
+  right: 22px;
+  display: block;
+  height: 16px;
+  width: 12px;
+  background: url('../img/icons/angle-right.svg') center/cover no-repeat;
+}
+
+div[data-view="days picker"]{
+  //ul{
+  //  margin-bottom: 15px;
+  //}
+
+}
+
+.datepicker-panel>ul>li{
+  height: 20px;
+
+  &:hover{
+    background: transparent;
+  }
+}
+
+.datepicker-container ul[data-view='days'] li.muted{
+  color: #717171;
+}

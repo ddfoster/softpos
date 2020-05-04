@@ -1,0 +1,57 @@
+button{
+  font-family: $fontJosefin;
+  color: $primaryWhite;
+  font-weight: 600;
+  transition: all .3s ease;
+  border: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: $primaryGray;
+
+  &:focus{
+    outline: none
+  }
+
+  &.type-1{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 18px 69px;
+  }
+
+  &.type-2{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 69px;
+  }
+
+  &.type-3{
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 25px;
+
+    &.download{
+      &:before{
+        content: '';
+        display: inline-block;
+        background: url(../img/icons/download.svg) center/cover no-repeat;
+        width: 11px;
+        height: 11px;
+        position: relative;
+        top: 0px;
+        left: -7px;
+      }
+    }
+  }
+
+  &.type-4{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover{
+    background: $primaryBlue;
+  }
+}

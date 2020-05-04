@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<nav class="main-nav">
+    <div class="logo">
+        <a href="/">
+            <img src="img/logo-blue-dots.svg" alt="">
+        </a>
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">
+                <span class="nav-icon dashboard"></span>
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="nav-icon merchants"></span>
+                Merchants
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="nav-icon users"></span>
+                Users
+            </a>
+        </li>
+        <li class="active">
+            <a href="#">
+                <span class="nav-icon reports"></span>
+                Reports
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="nav-icon activity"></span>
+                Activity log
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="nav-icon settings"></span>
+                Settings
+            </a>
+        </li>
+        <li>
+            <a href="#" data-toggle="modal" data-target="#logoutModal">
+                <span class="nav-icon logout"></span>
+                Log out
+            </a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <div class="wrapper report">
+        <div class="hozintal-blocks">
+            <div class="block">
+                <h2>Merchant summary report</h2>
+                <p>Displays information about all registered merchants with the current status.</p>
+                <div class="horizontal">
+                    <select name="" id="" class="datepicker">
+                        <option value="1">Last week</option>
+                        <option value="2">Last month</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                </div>
+
+                <button class="type-3 download">download report</button>
+            </div>
+            <div class="block">
+                <h2>Merchant summary report</h2>
+                <p>Displays information about all registered merchants with the current status.</p>
+                <div class="horizontal">
+                    <select name="" id="" class="datepicker">
+                        <option value="1">Last week</option>
+                        <option value="2">Last month</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                </div>
+
+                <button class="type-3 download">download report</button>
+            </div>
+        </div>
+        <div class="hozintal-blocks">
+            <div class="block">
+                <h2>Merchant summary report</h2>
+                <p>Displays information about all registered merchants with the current status.</p>
+                <div class="horizontal">
+                    <select name="" id="" class="datepicker">
+                        <option value="1">Last week</option>
+                        <option value="2">Last month</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                </div>
+
+                <button class="type-3 download">download report</button>
+            </div>
+            <div class="block">
+                <h2>Merchant summary report</h2>
+                <p>Displays information about all registered merchants with the current status.</p>
+                <div class="horizontal">
+                    <select name="" id="" class="datepicker">
+                        <option value="1">Last week</option>
+                        <option value="2">Last month</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                </div>
+
+                <button class="type-3 download">download report</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="close-modal" data-dismiss="modal">
+                <img src="img/icons/close.svg" alt="">
+            </div>
+
+            <div class="modal-header">
+                <h1>Do you want to log out?</h1>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <div class="buttons-wrapper">
+                        <button class="type-1">confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

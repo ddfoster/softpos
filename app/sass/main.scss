@@ -1,0 +1,392 @@
+@import "./partials/variables";
+@import "./partials/helper";
+@import "./partials/buttons";
+@import "partials/inputs";
+@import "partials/typo";
+@import "partials/nav";
+@import "partials/select-plugin";
+@import "partials/div-tables";
+@import "partials/modals";
+@import "partials/carousel";
+@import "partials/datepicker";
+
+html, body{
+  min-width: 1200px;
+}
+
+body{
+  position: relative;
+  background: #F8F8F8;
+}
+
+main{
+  position: relative;
+  margin-left: 180px;
+  width: calc(100% - 180px);
+  margin-top: 40px;
+  padding-right: 40px;
+}
+
+.logo{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 11;
+}
+
+.left-side{
+  background-image: url(../img/login-right-side.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 38vw;
+  min-height: 630px;
+}
+
+.right-side{
+  //background-image: url(../img/login-right-side.png);
+  background: #fff;
+  background-size: cover;
+  background-position: top left;
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 630px;
+  width: calc(100% - 32vw);
+  border-radius: 80px 0 0 80px;
+  z-index: 3;
+
+  .form-group{
+    margin-bottom: 25px;
+  }
+
+  input{
+    min-width: 500px;
+  }
+
+  h1{
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+.form-wrapper{
+  margin-right: 25%;
+}
+
+.block{
+  background: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 5px 30px rgba(20, 20, 20, 0.05);
+  padding: 40px 40px 40px;
+  margin-bottom: 40px;
+}
+
+.search{
+  .form{
+    display: flex;
+
+    .form-group{
+      input{
+        width: 100%;
+      }
+      &:first-child{
+        flex-basis: 330px;
+      }
+      &:nth-child(2){
+        flex: 1;
+        margin: 0 20px;
+      }
+
+    }
+  }
+}
+
+.merchant-item{
+  display: flex;
+
+  .merchant-wrap{
+    position: relative;
+    flex-basis: 300px;
+    margin-right: 50px;
+
+    .thumb{
+      width: 300px;
+      height: 284px;
+      border-radius: 20px;
+
+      &.merchants-thumb{
+        background: url('../img/merchant-item.jpg') center/cover no-repeat;
+      }
+      &.device-thumb{
+        background: url('http://placehold.it/300x300&text=DEVICE_IMAGE') center/cover no-repeat;
+      }
+      &.operator-thumb{
+        background: url('http://placehold.it/300x300&text=OPERATOR_IMAGE') center/cover no-repeat;
+      }
+      &.user-thumb{
+        height: 240px;
+        background: url('http://placehold.it/300x300&text=USER_IMAGE') center/cover no-repeat;
+      }
+    }
+
+    .op-buttons{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 12px;
+      right: -10px;
+
+      button{
+        margin-bottom: 10px;
+      }
+    }
+
+    .status{
+      img{
+        width: 140px;
+        position: absolute;
+        right: -15px;
+        //bottom: 32px;
+        top: 239px;
+      }
+    }
+
+    &.with-notice{
+      .thumb{
+        height: 230px;
+      }
+      .status{
+        img{
+          top: 192px;
+        }
+      }
+
+      > p{
+        text-align: center;
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 0 25px;
+      }
+    }
+  }
+
+  .item-data{
+    width: 100%;
+
+    h2{
+      padding-bottom: 25px;
+      border-bottom: 1px solid #EBEFF1;
+      color: $primaryGray;
+      font-family: $fontMontserrat;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      width: calc(100% - 30px);
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 300px;
+      padding-left: 0;
+      font-family: $fontJosefin;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: $secondaryDarkGray;
+
+      li{
+        position: relative;
+        list-style: none;
+        padding: 15px 0;
+        flex: 1;
+        border-bottom: 1px solid #EBEFF1;
+        margin-right: 30px;
+
+        b{
+          color: $primaryGray
+        }
+      }
+    }
+
+    &.merchant-data{
+
+    }
+    &.operator-data{
+      ul{
+        li{
+          padding: 28px 0;
+        }
+      }
+    }
+    &.device-data{
+      ul{
+        li{
+          padding: 32px 0;
+        }
+      }
+    }
+  }
+}
+
+.hozintal-blocks{
+  display: flex;
+
+  .block{
+    flex: 1;
+    max-width: calc(50% - 35px);
+    &:first-child{
+      margin-right: 35px;
+    }
+
+    p{
+
+    }
+  }
+}
+
+.user-view{
+  margin-left: 140px;
+  width: calc(100% - 140px);
+
+  .hozintal-blocks{
+    .block:first-child{
+      position: relative;
+      align-items: stretch;
+      margin-top: -40px;
+      max-width: 400px;
+      min-height: 100vh;
+      margin-bottom: 0;
+    }
+    .block:last-child{
+      max-width: 100%;
+    }
+  }
+
+
+
+  .status img{
+    top: 192px !important;
+  }
+
+  .user-info{
+    ul{
+      margin-top: 40px;
+      padding-left: 0;
+      font-family: $fontJosefin;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+      color: $secondaryDarkGray;
+
+      li{
+        list-style: none;
+        border-bottom: 1px solid #EBEFF1;
+        padding: 15px 0;
+
+        &:first-child{
+          border-top: 1px solid #EBEFF1;
+        }
+      }
+
+      b{
+        color: $primaryGray;
+      }
+    }
+
+    button, a{
+      background: none;
+      color: $primaryBlue;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: none;
+      padding: 0;
+      &:after{
+        display: none;
+      }
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    .dropdown-menu{
+      padding: 10px 15px;
+      border-radius: 0;
+      border: 1px solid #EBEFF1;
+      background: #fff;
+
+      a{
+        color: $primaryGray;
+        transition: color .3s ease ;
+        &:not(:last-child){
+          margin-bottom: 8px;
+        }
+        &:hover, &.active{
+          text-decoration: none;
+          color: $primaryBlue
+        }
+      }
+    }
+  }
+}
+
+.report{
+  .horizontal{
+    display: flex;
+
+    & > .selectize-control {
+      width: 100%;
+      min-width: 133px;
+    }
+    .date{
+      max-width: 137px;
+      margin-left: 10px;
+    }
+  }
+
+  .block{
+    text-align: center;
+  }
+
+  h3{
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: $primaryGray;
+    margin-bottom: 14px;
+  }
+
+  p{
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  button{
+    margin-top: 20px;
+  }
+
+  .datepicker{
+    text-align: left;
+  }
+}

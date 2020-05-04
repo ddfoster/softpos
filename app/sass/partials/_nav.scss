@@ -1,0 +1,116 @@
+.main-nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 140px;
+  height: 100vh;
+  min-height: 630px;
+  background: $primaryGray;
+
+  .logo{
+    top: 31px;
+    left: 34px;
+  }
+
+  ul{
+    margin-top: 100px;
+    padding-left: 0;
+    @media(min-height: 700px){
+      margin-top: 115px;
+    }
+
+    li{
+      list-style: none;
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+      @media(min-height: 700px){
+        &:not(:last-child){
+          margin-bottom: 35px;
+        }
+      }
+
+
+      a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.3;
+        color: $primaryWhite;
+        font-family: $fontMontserrat;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: all .3s ease;
+
+        &:hover{
+          opacity: 1;
+        }
+
+        span{
+          width: 28px;
+          height: 28px;
+          background-size: cover;
+          background-position: center;
+          display: inline-block;
+          margin-bottom: 8px;
+          &.dashboard{
+            background-image: url(../img/icons/dashboard.svg);
+          }
+          &.merchants{
+            background-image: url(../img/icons/merchants.svg);
+          }
+          &.users{
+            background-image: url(../img/icons/users.svg);
+          }
+          &.reports{
+            background-image: url(../img/icons/reports.svg);
+          }
+          &.activity{
+            background-image: url(../img/icons/activity.svg);
+          }
+          &.settings{
+            background-image: url(../img/icons/setting.svg);
+          }
+          &.logout{
+            background-image: url(../img/icons/logout.svg);
+          }
+        }
+      }
+
+      &.active{
+        a{
+          opacity: 1;
+        }
+        span{
+          width: 28px;
+          height: 28px;
+          &.dashboard{
+            background-image: url(../img/icons/dashboard-active.svg);
+          }
+          &.merchants{
+            background-image: url(../img/icons/merchants-active.svg);
+          }
+          &.users{
+            background-image: url(../img/icons/users-active.svg);
+          }
+          &.reports{
+            background-image: url(../img/icons/reports-active.svg);
+          }
+          &.activity{
+            background-image: url(../img/icons/activity-active.svg);
+          }
+          &.settings{
+            background-image: url(../img/icons/settings-active.svg);
+          }
+          &.logout{
+            background-image: url(../img/icons/logout-active.svg);
+          }
+        }
+      }
+    }
+  }
+}
