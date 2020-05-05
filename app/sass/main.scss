@@ -225,7 +225,12 @@ main{
     }
 
     &.merchant-data{
-
+      .without-operators-devices{
+        position: relative;
+        top: -59px;
+        margin-bottom: -59px;
+        max-height: 330px;
+      }
     }
     &.operator-data{
       ul{

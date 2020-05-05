@@ -31,7 +31,7 @@ $('#searchButton').click(function () {
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
-        boundary: 'window'
+        container: '.form-group'
     })
 });
 
