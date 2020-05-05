@@ -26,19 +26,19 @@
         background-repeat: no-repeat;
       }
       &.active:after{
-        background-image: url('../img/icons/short-status-green.png');
+        background-image: url('../img/icons/short-status-green.svg');
       }
 
       &.suspended:after{
-        background-image: url('../img/icons/short-status-orange.png');
+        background-image: url('../img/icons/short-status-orange.svg');
       }
 
       &.deactivated:after{
-        background-image: url('../img/icons/short-status-red.png');
+        background-image: url('../img/icons/short-status-red.svg');
       }
 
       &.inactive:after{
-        background-image: url('../img/icons/short-status-gray.png');
+        background-image: url('../img/icons/short-status-gray.svg');
       }
     }
 

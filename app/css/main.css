@@ -136,6 +136,7 @@
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  cursor: pointer;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -562,13 +563,13 @@ p {
       background-position: center;
       background-repeat: no-repeat; }
     .carousel-wrapper .info.short-status.active:after {
-      background-image: url("../img/icons/short-status-green.png"); }
+      background-image: url("../img/icons/short-status-green.svg"); }
     .carousel-wrapper .info.short-status.suspended:after {
-      background-image: url("../img/icons/short-status-orange.png"); }
+      background-image: url("../img/icons/short-status-orange.svg"); }
     .carousel-wrapper .info.short-status.deactivated:after {
-      background-image: url("../img/icons/short-status-red.png"); }
+      background-image: url("../img/icons/short-status-red.svg"); }
     .carousel-wrapper .info.short-status.inactive:after {
-      background-image: url("../img/icons/short-status-gray.png"); }
+      background-image: url("../img/icons/short-status-gray.svg"); }
     .carousel-wrapper .info .white {
       font-size: 18px;
       line-height: 18px;

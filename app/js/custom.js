@@ -29,37 +29,38 @@ $('#searchButton').click(function () {
     $('#searchField').addClass('active')
 });
 
-$(function () {
+$(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({
-        container: '.form-group'
-    })
-});
+        container: 'body',
+        offset:  '0 50'
+    });
 
-$('.slick-2 ').slick({
-    infinite: false,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    dots: true,
-    arrows: false,
-    draggable: false
-});
+    $('.slick-2 ').slick({
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        draggable: false
+    });
 
-$('.slick-4').slick({
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    dots: true,
-    arrows: false,
-    draggable: false
-});
+    $('.slick-4').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        draggable: false
+    });
 
-$('select').selectize({
-    persist: false,
-    create: false,
-});
-$('.selectize-input > input').prop('disabled', 'disabled');
+    $('select').selectize({
+        persist: false,
+        create: false,
+    });
+    $('.selectize-input > input').prop('disabled', 'disabled');
 
-$('[data-toggle="datepicker"]').datepicker({
-    format: 'dd/mm/yyyy',
-    offset: -30
+    $('[data-toggle="datepicker"]').datepicker({
+        format: 'dd/mm/yyyy',
+        offset: -30
+    });
 });
