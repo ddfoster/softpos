@@ -10,150 +10,262 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-<nav class="main-nav">
-    <div class="logo">
-        <a href="/">
-            <img src="img/logo-blue-dots.svg" alt="">
-        </a>
-    </div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo-blue-dots.svg" alt="">
+            </a>
+        </div>
 
-    <ul>
-        <li>
-            <a href="#">
-                <span class="nav-icon dashboard"></span>
-                Dashboard
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="nav-icon merchants"></span>
-                Merchants
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="nav-icon users"></span>
-                Users
-            </a>
-        </li>
-        <li class="active">
-            <a href="#">
-                <span class="nav-icon reports"></span>
-                Reports
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="nav-icon activity"></span>
-                Activity log
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="nav-icon settings"></span>
-                Settings
-            </a>
-        </li>
-        <li>
-            <a href="#" data-toggle="modal" data-target="#logoutModal">
-                <span class="nav-icon logout"></span>
-                Log out
-            </a>
-        </li>
-    </ul>
-</nav>
-<main>
-    <div class="wrapper report">
-        <div class="hozintal-blocks">
-            <div class="block">
-                <h2>Merchant summary report</h2>
-                <p>Displays information about all registered merchants with the current status.</p>
-                <div class="horizontal">
-                    <select name="" id="" class="datepicker">
-                        <option value="1">Last week</option>
-                        <option value="2">Last month</option>
-                        <option value="custom">Custom</option>
-                    </select>
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <span class="nav-icon dashboard"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="merchants.html">
+                    <span class="nav-icon merchants"></span>
+                    Merchants
+                </a>
+            </li>
+            <li>
+                <a href="users.html">
+                    <span class="nav-icon users"></span>
+                    Users
+                </a>
+            </li>
+            <li>
+                <a href="reports.html">
+                    <span class="nav-icon reports"></span>
+                    Reports
+                </a>
+            </li>
+            <li>
+                <a href="activity-log.html">
+                    <span class="nav-icon activity"></span>
+                    Activity log
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <span class="nav-icon settings"></span>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="modal" data-target="#logoutModal">
+                    <span class="nav-icon logout"></span>
+                    Log out
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="block search">
+                <div class="block-header">
+                    <h1>Search</h1>
                 </div>
-
-                <button class="type-3 download">download report</button>
+                <div class="form">
+                    <div class="form-group">
+                        <select>
+                            <option value="0">All data</option>
+                            <option value="1">Merchant ID / Trading Point ID1</option>
+                            <option value="2">Operator ID</option>
+                            <option value="3">Device ID / POS ID</option>
+                            <option value="4">IMEI</option>
+                            <option value="5">Phone</option>
+                            <option value="6">Name</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter key word">
+                    </div>
+                    <div class="form-group">
+                        <button class="type-2">Seach</button>
+                    </div>
+                </div>
             </div>
-            <div class="block">
-                <h2>Merchant summary report</h2>
-                <p>Displays information about all registered merchants with the current status.</p>
-                <div class="horizontal">
-                    <select name="" id="" class="datepicker">
-                        <option value="1">Last week</option>
-                        <option value="2">Last month</option>
-                        <option value="custom">Custom</option>
-                    </select>
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
-                </div>
 
-                <button class="type-3 download">download report</button>
+            <div class="block">
+                <div class="block-header">
+                    <h1>Merchants (4)</h1>
+                </div>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow head">
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">#</div>
+                            <div class="divTableCell">Merchant ID</div>
+                            <div class="divTableCell">Name</div>
+                            <div class="divTableCell">Phone</div>
+                            <div class="divTableCell">Email</div>
+                            <div class="divTableCell">Status</div>
+                            <div class="divTableCell">Date of creation</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">1</div>
+                            <div class="divTableCell">7683647586347867</div>
+                            <div class="divTableCell">Fast taxi</div>
+                            <div class="divTableCell">+380982348765</div>
+                            <div class="divTableCell">info@fasttaxi.com</div>
+                            <div class="divTableCell"><span class="status-tag approved">approved</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><a href="#"></a></div>
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell">7683647586347867</div>
+                            <div class="divTableCell">Fast taxi</div>
+                            <div class="divTableCell">+380982348765</div>
+                            <div class="divTableCell">info@fasttaxi.com</div>
+                            <div class="divTableCell"><span class="status-tag deactivated">deactivated</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><a href="#"></a></div>
+                            <div class="divTableCell">3</div>
+                            <div class="divTableCell">7683647586347867</div>
+                            <div class="divTableCell">Fast taxi</div>
+                            <div class="divTableCell">+380982348765</div>
+                            <div class="divTableCell">info@fasttaxi.com</div>
+                            <div class="divTableCell"><span class="status-tag suspended">suspended</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><a href="#"></a></div>
+                            <div class="divTableCell">4</div>
+                            <div class="divTableCell">7683647586347867</div>
+                            <div class="divTableCell">Fast taxi</div>
+                            <div class="divTableCell">+380982348765</div>
+                            <div class="divTableCell">info@fasttaxi.com</div>
+                            <div class="divTableCell"><span class="status-tag active">active</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h1>No results found</h1>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h1>Operators (2)</h1>
+                </div>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow head">
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">#</div>
+                            <div class="divTableCell">Operator ID</div>
+                            <div class="divTableCell">Login</div>
+                            <div class="divTableCell">Phone</div>
+                            <div class="divTableCell">Name</div>
+                            <div class="divTableCell">Status</div>
+                            <div class="divTableCell">Date of creation</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">1</div>
+                            <div class="divTableCell">1637625565264364</div>
+                            <div class="divTableCell">manager365</div>
+                            <div class="divTableCell">+380948745767</div>
+                            <div class="divTableCell">Lindsey Kim</div>
+                            <div class="divTableCell"><span class="status-tag active">active</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell">1637625565264364</div>
+                            <div class="divTableCell">manager365</div>
+                            <div class="divTableCell">+380948745767</div>
+                            <div class="divTableCell">Lindsey Kim</div>
+                            <div class="divTableCell"><span class="status-tag active">active</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-header">
+                    <h1>Devices (3)</h1>
+                </div>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow head">
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">#</div>
+                            <div class="divTableCell">Device ID / POS ID</div>
+                            <div class="divTableCell">Device model</div>
+                            <div class="divTableCell">IMEI</div>
+                            <div class="divTableCell">Status</div>
+                            <div class="divTableCell">Date of creation</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">1</div>
+                            <div class="divTableCell">8547863693874857</div>
+                            <div class="divTableCell">Sony G3112</div>
+                            <div class="divTableCell">5070128710873</div>
+                            <div class="divTableCell"><span class="status-tag active">active</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell">8547863693874857</div>
+                            <div class="divTableCell">Sony G3112</div>
+                            <div class="divTableCell">5070128710873</div>
+                            <div class="divTableCell"><span class="status-tag suspended">suspended</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell link-wrapper"><a href="#"></a></div>
+                            <div class="divTableCell">3</div>
+                            <div class="divTableCell">8547863693874857</div>
+                            <div class="divTableCell">Sony G3112</div>
+                            <div class="divTableCell">5070128710873</div>
+                            <div class="divTableCell"><span class="status-tag active">active</span></div>
+                            <div class="divTableCell">19:12, 22 March 2020</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hozintal-blocks">
-            <div class="block">
-                <h2>Merchant summary report</h2>
-                <p>Displays information about all registered merchants with the current status.</p>
-                <div class="horizontal">
-                    <select name="" id="" class="datepicker">
-                        <option value="1">Last week</option>
-                        <option value="2">Last month</option>
-                        <option value="custom">Custom</option>
-                    </select>
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+    </main>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="close-modal" data-dismiss="modal">
+                    <img src="img/icons/close.svg" alt="">
                 </div>
 
-                <button class="type-3 download">download report</button>
-            </div>
-            <div class="block">
-                <h2>Merchant summary report</h2>
-                <p>Displays information about all registered merchants with the current status.</p>
-                <div class="horizontal">
-                    <select name="" id="" class="datepicker">
-                        <option value="1">Last week</option>
-                        <option value="2">Last month</option>
-                        <option value="custom">Custom</option>
-                    </select>
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
-                    <input data-toggle="datepicker" disabled placeholder="15/03/2020" class="date">
+                <div class="modal-header">
+                    <h1>Do you want to log out?</h1>
                 </div>
-
-                <button class="type-3 download">download report</button>
-            </div>
-        </div>
-    </div>
-</main>
-
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <div class="close-modal" data-dismiss="modal">
-                <img src="img/icons/close.svg" alt="">
-            </div>
-
-            <div class="modal-header">
-                <h1>Do you want to log out?</h1>
-            </div>
-            <div class="modal-body">
-                <div class="modal-form">
-                    <div class="buttons-wrapper">
-                        <button class="type-1">confirm</button>
+                <div class="modal-body">
+                    <div class="modal-form">
+                        <div class="buttons-wrapper">
+                            <button class="type-1">confirm</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="js/libs.min.js"></script>
-<script src="js/custom.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
