@@ -42,6 +42,14 @@
       }
     }
 
+    a{
+      position: absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      top:0;
+      z-index: 2;
+    }
     .white{
       font-size: 18px;
       line-height: 18px;
@@ -53,6 +61,10 @@
       letter-spacing: 0.02em;
       opacity: 0.6;
       margin-bottom: 10px;
+    }
+
+    &.operators{
+      background: url(../img/operator-img.svg) center/cover no-repeat;
     }
   }
 
@@ -105,7 +117,7 @@
       width: 13.6111111vw;
       //height: 280px;
       height: 19.4444444vw;
-      background-image: url('../img/actionbar.jpg');
+      background-image: url('../img/actionbar.svg');
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -136,13 +148,13 @@
   .carousel{
 
     .slick-slide {
-      margin: 0 10px;
+      margin: 0 20px;
       height: 25vw;
       outline: none;
     }
     /* the parent */
     .slick-list {
-      margin: 0 -10px;
+      margin: 0 -20px;
     }
 
     .slick-dots{

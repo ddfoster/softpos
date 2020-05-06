@@ -47,10 +47,10 @@ main{
 }
 
 .right-side{
-  //background-image: url(../img/login-right-side.png);
-  background: #fff;
-  background-size: cover;
-  background-position: top left;
+  background: url(../img/right-side-bg.svg) top left/cover no-repeat;
+  //background: #fff;
+  //background-size: cover;
+  //background-position: top left;
   position: absolute;
   left: auto;
   top: 0;
@@ -125,19 +125,20 @@ main{
       width: 300px;
       height: 284px;
       border-radius: 20px;
+      box-shadow: 5px 5px 30px rgba(20, 20, 20, 0.15);
 
       &.merchants-thumb{
-        background: url('../img/merchant-item.jpg') center/cover no-repeat;
+        background: url('../img/merchant.svg') center/cover no-repeat;
       }
       &.device-thumb{
-        background: url('http://placehold.it/300x300&text=DEVICE_IMAGE') center/cover no-repeat;
+        background: url('../img/device.svg') center/cover no-repeat;
       }
       &.operator-thumb{
-        background: url('http://placehold.it/300x300&text=OPERATOR_IMAGE') center/cover no-repeat;
+        background: url('../img/operator.svg') center/cover no-repeat;
       }
       &.user-thumb{
         height: 240px;
-        background: url('http://placehold.it/300x300&text=USER_IMAGE') center/cover no-repeat;
+        background: url('../img/user.svg') center/cover no-repeat;
       }
     }
 

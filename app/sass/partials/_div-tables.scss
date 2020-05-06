@@ -1,8 +1,11 @@
 .divTable{
+
+  position: relative;
   display: table;
   width: 100%;
 }
 .divTableRow {
+  position: relative;
   display: table-row;
   font-family: $fontJosefin;
   font-style: normal;
@@ -11,6 +14,7 @@
   line-height: 16px;
   letter-spacing: 0.01em;
   color: $secondaryDarkGray;
+  transform: scale(1);
   transition: background-color .3s ease;
 
   &.head{
@@ -22,6 +26,14 @@
 
   &:not(:first-child):hover{
     background: $secondary_f8;
+  }
+
+  > a{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 100%;
   }
 }
 .divTableHeading {
@@ -45,4 +57,14 @@
 }
 .divTableBody {
   display: table-row-group;
+}
+
+.divTableCell.link-wrapper{
+  a{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    height: 100%;
+  }
 }
