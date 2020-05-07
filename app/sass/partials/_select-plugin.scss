@@ -78,3 +78,7 @@
 .selectize-control.single .selectize-input.input-active, .selectize-input{
   display: block;
 }
+
+.selectize-dropdown-content{
+  max-height: 210px;
+}

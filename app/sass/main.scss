@@ -243,7 +243,7 @@ main{
     &.device-data{
       ul{
         li{
-          padding: 32px 0;
+          padding: 28px 0;
         }
       }
     }
@@ -267,10 +267,12 @@ main{
 }
 
 .user-view{
-  margin-left: 140px;
-  width: calc(100% - 140px);
+  margin-left: 135px;
+  width: calc(100% - 135px);
 
   .hozintal-blocks{
+
+    //align-items: flex-start;
     .block:first-child{
       position: relative;
       align-items: stretch;
@@ -278,6 +280,14 @@ main{
       max-width: 400px;
       min-height: 100vh;
       margin-bottom: 0;
+      border-radius: 20px;
+      //position: sticky;
+      //top: 0;
+      //margin-top: -40px;
+      //max-width: 400px;
+      //min-height: 100vh;
+      //margin-bottom: 0;
+      //border-radius: 20px;
     }
     .block:last-child{
       max-width: 100%;
@@ -371,7 +381,7 @@ main{
     text-align: center;
   }
 
-  h3{
+  h2{
     font-family: $fontMontserrat;
     font-weight: bold;
     font-size: 22px;
@@ -394,5 +404,16 @@ main{
 
   .datepicker{
     text-align: left;
+  }
+}
+
+.gray-content{
+  .divTableRow:not(.head){
+    font-family: $fontJosefin;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $secondaryDarkGray;
   }
 }

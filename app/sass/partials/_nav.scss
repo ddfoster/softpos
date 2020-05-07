@@ -1,9 +1,7 @@
 .main-nav{
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: fixed;
   left: 0;
   top: 0;
@@ -36,10 +34,26 @@
     border-radius: 20px 0 0 20px;
   }
 
+  &.bottom{
+    align-items: flex-end;
+
+    ul{
+      margin-bottom: 40px;
+      li{
+        &:last-child{
+          position: relative;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
   .logo{
     top: 31px;
     left: 34px;
   }
+
+
 
   ul{
     margin-top: 100px;
@@ -76,7 +90,7 @@
         transition: all .3s ease;
 
         &:hover{
-          opacity: 1;
+          opacity: .6;
         }
 
         span{
@@ -106,6 +120,12 @@
           }
           &.logout{
             background-image: url(../img/icons/logout.svg);
+          }
+          &.admins{
+            background-image: url(../img/icons/admins.svg);
+          }
+          &.search{
+            background-image: url(../img/icons/search-icon.svg);
           }
         }
       }
@@ -137,6 +157,12 @@
           }
           &.logout{
             background-image: url(../img/icons/logout-active.svg);
+          }
+          &.admins{
+            background-image: url(../img/icons/admins-active.svg);
+          }
+          &.search{
+            background-image: url(../img/icons/search-icon-active.svg);
           }
         }
       }

@@ -1,6 +1,7 @@
 .datepicker-container{
   padding: 15px 15px 10px 15px;
   border: 1px solid #EBEFF1;
+  box-shadow: none;
   .datepicker-panel{
     ul{
       width: 100%;
@@ -119,4 +120,19 @@ div[data-view="days picker"]{
 
 .datepicker-container ul[data-view='days'] li.muted{
   color: #717171;
+}
+
+.datepicker-container ul[data-view='days'] li.highlighted{
+  background: none;
+  font-weight: bold;
+
+  &:hover{
+    background: none;
+    font-weight: 600;
+  }
+}
+
+.datepicker-container .datepicker-panel>ul>li.picked{
+  color: $primaryBlue;
+  font-weight: 600;
 }

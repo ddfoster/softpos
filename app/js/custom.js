@@ -63,4 +63,12 @@ $(document).ready(function(){
         format: 'dd/mm/yyyy',
         offset: -30
     });
+
+    $('[data-toggle="filterdatepicker"]').datepicker({
+        trigger: '.filterByDate',
+        format: 'dd/mm/yyyy',
+        autoHide: true,
+        offset: -30
+
+    });
 });
