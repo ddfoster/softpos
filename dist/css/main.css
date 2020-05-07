@@ -66,7 +66,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../img/icons/copy-pass.svg"); }
+    background-image: url("../img/icons/copy-code.svg"); }
+  .icon.language {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/language.svg") center/cover no-repeat; }
+  .icon.lock {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/lock.svg") center/cover no-repeat; }
 
 .block-header {
   display: flex;
@@ -164,12 +172,39 @@
     position: relative;
     right: -10px;
     top: -2px;
-    border-top: 6px solid #000;
-    border-left: 6px solid #fff;
-    border-right: 6px solid #fff;
+    border-top: 5px solid #000;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
     transition: transform .3s ease; }
   .func.active:after {
     transform: rotate(180deg); }
+
+.divTableCell .dropdown {
+  z-index: 20; }
+  .divTableCell .dropdown .dropdown-menu {
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #EBEFF1;
+    padding: 10px 0 2px; }
+    .divTableCell .dropdown .dropdown-menu a {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      color: #141414;
+      padding: 0 16px 8px;
+      transition: color .3s ease; }
+      .divTableCell .dropdown .dropdown-menu a:hover, .divTableCell .dropdown .dropdown-menu a.active {
+        color: #1E25D5;
+        background: none; }
+
+.divTableCell .datefilter-wrapper .dropdown-menu, .divTableCell .datefilter-wrapper input {
+  height: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  width: 0; }
 
 button {
   font-family: "Josefin Sans", sans-serif;
@@ -185,15 +220,15 @@ button {
   button.type-1 {
     font-size: 18px;
     line-height: 18px;
-    padding: 18px 69px; }
+    padding: 18px 69px 16px; }
   button.type-2 {
     font-size: 16px;
     line-height: 16px;
-    padding: 17px 69px; }
+    padding: 17px 69px 15px; }
   button.type-3 {
     font-size: 12px;
     line-height: 16px;
-    padding: 10px 25px; }
+    padding: 10px 25px 8px; }
     button.type-3.download:before {
       content: '';
       display: inline-block;
@@ -202,7 +237,8 @@ button {
       height: 11px;
       position: relative;
       top: 0px;
-      left: -7px; }
+      left: -7px;
+      margin-left: 7px; }
   button.type-4 {
     width: 46px;
     height: 46px;
@@ -315,6 +351,13 @@ p {
     background: #f7f7f7;
     bottom: 0;
     border-radius: 20px 0 0 20px; }
+  .main-nav.bottom {
+    align-items: flex-end; }
+    .main-nav.bottom ul {
+      margin-bottom: 40px; }
+      .main-nav.bottom ul li:last-child {
+        position: relative;
+        bottom: 0; }
   .main-nav .logo {
     top: 31px;
     left: 34px; }
@@ -347,7 +390,7 @@ p {
         text-decoration: none;
         transition: all .3s ease; }
         .main-nav ul li a:hover {
-          opacity: 1; }
+          opacity: .6; }
         .main-nav ul li a span {
           width: 28px;
           height: 28px;
@@ -369,6 +412,10 @@ p {
             background-image: url(../img/icons/setting.svg); }
           .main-nav ul li a span.logout {
             background-image: url(../img/icons/logout.svg); }
+          .main-nav ul li a span.admins {
+            background-image: url(../img/icons/admins.svg); }
+          .main-nav ul li a span.search {
+            background-image: url(../img/icons/search-icon.svg); }
       .main-nav ul li.active a {
         opacity: 1; }
       .main-nav ul li.active span {
@@ -388,6 +435,10 @@ p {
           background-image: url(../img/icons/settings-active.svg); }
         .main-nav ul li.active span.logout {
           background-image: url(../img/icons/logout-active.svg); }
+        .main-nav ul li.active span.admins {
+          background-image: url(../img/icons/admins-active.svg); }
+        .main-nav ul li.active span.search {
+          background-image: url(../img/icons/search-icon-active.svg); }
       .main-nav ul li:last-child {
         position: absolute;
         bottom: 20px;
@@ -451,6 +502,9 @@ p {
 .selectize-control.single .selectize-input.input-active, .selectize-input {
   display: block; }
 
+.selectize-dropdown-content {
+  max-height: 210px; }
+
 .divTable {
   position: relative;
   display: table;
@@ -472,7 +526,11 @@ p {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     line-height: 20px;
-    color: #141414; }
+    color: #141414;
+    transform: none; }
+    .divTableRow.head a {
+      color: inherit;
+      text-decoration: none; }
   .divTableRow:not(:first-child):hover {
     background: #F8F8F8; }
   .divTableRow > a {
@@ -550,7 +608,7 @@ p {
   line-height: 34px;
   text-align: center;
   letter-spacing: 0.2em;
-  /* Blue */
+  margin-top: -15px;
   color: #1E25D5; }
 
 .modal .close-modal {
@@ -716,7 +774,8 @@ p {
 
 .datepicker-container {
   padding: 15px 15px 10px 15px;
-  border: 1px solid #EBEFF1; }
+  border: 1px solid #EBEFF1;
+  box-shadow: none; }
   .datepicker-container .datepicker-panel ul {
     width: 100%; }
   .datepicker-container ul[data-view='week'] li {
@@ -785,6 +844,17 @@ p {
 
 .datepicker-container ul[data-view='days'] li.muted {
   color: #717171; }
+
+.datepicker-container ul[data-view='days'] li.highlighted {
+  background: none;
+  font-weight: bold; }
+  .datepicker-container ul[data-view='days'] li.highlighted:hover {
+    background: none;
+    font-weight: 600; }
+
+.datepicker-container .datepicker-panel > ul > li.picked {
+  color: #1E25D5;
+  font-weight: 600; }
 
 html, body {
   min-width: 1200px; }
@@ -943,7 +1013,7 @@ main {
     .merchant-item .item-data.operator-data ul li {
       padding: 28px 0; }
     .merchant-item .item-data.device-data ul li {
-      padding: 32px 0; }
+      padding: 28px 0; }
 
 .hozintal-blocks {
   display: flex; }
@@ -954,15 +1024,16 @@ main {
       margin-right: 35px; }
 
 .user-view {
-  margin-left: 140px;
-  width: calc(100% - 140px); }
+  margin-left: 135px;
+  width: calc(100% - 135px); }
   .user-view .hozintal-blocks .block:first-child {
     position: relative;
     align-items: stretch;
     margin-top: -40px;
     max-width: 400px;
     min-height: 100vh;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    border-radius: 20px; }
   .user-view .hozintal-blocks .block:last-child {
     max-width: 100%; }
   .user-view .status img {
@@ -1021,7 +1092,7 @@ main {
 .report .block {
   text-align: center; }
 
-.report h3 {
+.report h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -1041,3 +1112,11 @@ main {
 
 .report .datepicker {
   text-align: left; }
+
+.gray-content .divTableRow:not(.head) {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #717171; }

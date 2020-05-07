@@ -84,9 +84,41 @@
                         <div class="divTableCell">ID</div>
                         <div class="divTableCell">Name</div>
                         <div class="divTableCell">Email</div>
-                        <div class="divTableCell"><div class="func">Role</div></div>
-                        <div class="divTableCell"><div class="func">Status</div></div>
-                        <div class="divTableCell"><div class="func">Date of creation</div></div>
+                        <div class="divTableCell">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuRoles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Role
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuRoles">
+                                    <a class="dropdown-item active" href="#">All</a>
+                                    <a class="dropdown-item" href="#">User</a>
+                                    <a class="dropdown-item" href="#">Administrator</a>
+                                    <a class="dropdown-item" href="#">Super Administrator</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Status
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item active" href="#">All</a>
+                                    <a class="dropdown-item" href="#">Active</a>
+                                    <a class="dropdown-item" href="#">Suspended</a>
+                                    <a class="dropdown-item" href="#">Deactivated</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="dropdown datefilter-wrapper">
+                                <a class="dropdown-toggle filterByDate" href="#" role="button" id="dropdownMenuDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Date of creation
+                                </a>
+                                <div class="dropdown-menu show" aria-labelledby="dropdownMenuDate">
+                                    <input data-toggle="filterdatepicker" placeholder="15/03/2020" class="date">
+                                </div>
+                            </div></div>
                     </div>
                     <div class="divTableRow">
                         <div class="divTableCell link-wrapper"><a href="#"></a></div>
